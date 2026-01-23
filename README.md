@@ -2,7 +2,7 @@
 
 **Name:** Jyoti Dwivedi  
 **Roll Number:** M25CSA010  
-**Colab Notebook Link:** [Click Here](https://colab.research.google.com/drive/1nj5mUZXJ8MpkcqsdxYaNwKfu0l_nnA__?usp=sharing)
+**Colab Notebook Link:** https://colab.research.google.com/drive/1nj5mUZXJ8MpkcqsdxYaNwKfu0l_nnA__?usp=sharing
 
 ---
 
@@ -32,14 +32,6 @@ Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split (trai
 | 32 | SGD | 0.0001 | 87.74% | 80.21% |
 | 32 | Adam | 0.001 | **89.39%** | 87.04% |
 | 32 | Adam | 0.0001 | 89.16% | 85.12% |
-
-### Overall Best Results Table
-| Dataset | Model | Best Optimizer | Best Acc (%) |
-| :--- | :--- | :--- | :--- |
-| **MNIST** | ResNet-18 | SGD | **98.93%** |
-| **MNIST** | ResNet-50 | SGD | 98.36% |
-| **FashionMNIST** | ResNet-18 | Adam | **90.29%** (Tuned) |
-| **FashionMNIST** | ResNet-50 | SGD | 87.96% |
 
 > **Note:** The **Hyperparameter Tuned Model** is the overall best model. The other results listed above represent the best model found for that specific configuration (Dataset + Architecture) during the standard training and testing phase.
 
