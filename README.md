@@ -17,6 +17,8 @@ Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(trai
 | **FashionMNIST** | ResNet-18 | Adam | **90.29%** (Tuned) |
 | **FashionMNIST** | ResNet-50 | SGD | 87.96% |
 
+> **Note:** The **Hyperparameter Tuned Model** is the overall best model. The other results listed above represent the best model found for that specific configuration (Dataset + Architecture) during the standard training and testing phase.
+
 ### Training Graphs
 Below are the training and validation accuracy curves for all models, including the hyperparameter tuned run.
 ![Training Graphs](all_training_graphs.png)
