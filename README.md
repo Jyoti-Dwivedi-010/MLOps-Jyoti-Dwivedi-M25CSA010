@@ -9,6 +9,30 @@
 ## Q1(a). Deep Learning on MNIST & FashionMNIST
 Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(train-val-test)
 
+### 1. MNIST Results (Test Classification Accuracy)
+| Batch Size | Optimizer | Learning Rate | ResNet-18 Acc (%) | ResNet-50 Acc (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| 16 | SGD | 0.001 | 98.81% | 98.22% |
+| 16 | SGD | 0.0001 | 98.26% | 97.13% |
+| 16 | Adam | 0.001 | 98.85% | 98.09% |
+| 16 | Adam | 0.0001 | 98.08% | 97.72% |
+| 32 | SGD | 0.001 | **98.93%** | **98.36%** |
+| 32 | SGD | 0.0001 | 97.59% | 95.02% |
+| 32 | Adam | 0.001 | 98.72% | 98.15% |
+| 32 | Adam | 0.0001 | 98.56% | 96.71% |
+
+### 2. FashionMNIST Results (Test Classification Accuracy)
+| Batch Size | Optimizer | Learning Rate | ResNet-18 Acc (%) | ResNet-50 Acc (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| 16 | SGD | 0.001 | 90.20% | **87.96%** |
+| 16 | SGD | 0.0001 | 88.26% | 82.49% |
+| 16 | Adam | 0.001 | 88.89% | 86.42% |
+| 16 | Adam | 0.0001 | 89.23% | 86.04% |
+| 32 | SGD | 0.001 | 88.38% | 86.82% |
+| 32 | SGD | 0.0001 | 87.74% | 80.21% |
+| 32 | Adam | 0.001 | **89.39%** | 87.04% |
+| 32 | Adam | 0.0001 | 89.16% | 85.12% |
+
 ### Results Table (Best Test Accuracy)
 | Dataset | Model | Best Optimizer | Best Acc (%) |
 | :--- | :--- | :--- | :--- |
