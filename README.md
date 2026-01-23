@@ -1,13 +1,13 @@
-# MLOps Assignment 1: Deep Learning & Benchmarking
+# ML-DL-Ops Assignment 1
 
 **Name:** Jyoti Dwivedi  
 **Roll Number:** M25CSA010  
-**Colab Notebook Link:** [PASTE YOUR COLAB LINK HERE]
+**Colab Notebook Link:** https://colab.research.google.com/drive/1nj5mUZXJ8MpkcqsdxYaNwKfu0l_nnA__?usp=sharing
 
 ---
 
 ## Q1(a). Deep Learning on MNIST & FashionMNIST
-Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.
+Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(train-val-test)
 
 ### Results Table (Best Test Accuracy)
 | Dataset | Model | Best Optimizer | Best Acc (%) |
@@ -56,7 +56,13 @@ Comparison of training time and performance on FashionMNIST (2 Epochs).
 | **GPU** | ResNet-32 | SGD | 90.25% | 149,280 | 0.070 |
 | **CPU** | ResNet-50 | SGD | 85.18% | 1,800,461 | 0.082 |
 | **GPU** | ResNet-50 | SGD | 86.40% | 214,194 | 0.082 |
+| **CPU** | ResNet-18 | Adam | 88.99% | 855,215 | 0.035 |
+| **GPU** | ResNet-18 | Adam | 88.12% | 136,046 | 0.035 |
+| **CPU** | ResNet-32 | Adam | 89.21% | 744,994 | 0.070 |
+| **GPU** | ResNet-32 | Adam | 89.65% | 153,516 | 0.070 |
+| **CPU** | ResNet-50 | Adam | 84.47% | 2,019,986 | 0.082 |
+| **GPU** | ResNet-50 | Adam | 80.61% | 239,549 | 0.082 |
 
 **Analysis:**
-* **GPU Speedup:** Training on GPU was approximately **5.1x faster** for ResNet-18 and **8.4x faster** for ResNet-50 compared to CPU.
+* **GPU Speedup:** Training on GPU was approximately **5.2x faster** for ResNet-18 and **8.4x faster** for ResNet-50, whereas **5.0x faster** for ResNet-32 compared to CPU.
 * **Model Efficiency:** ResNet-32 (designed for CIFAR-style 32x32 images) achieved the highest accuracy (**90.25%**) while having fewer FLOPs than ResNet-50.
