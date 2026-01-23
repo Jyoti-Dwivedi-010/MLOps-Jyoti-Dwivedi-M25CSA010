@@ -2,12 +2,12 @@
 
 **Name:** Jyoti Dwivedi  
 **Roll Number:** M25CSA010  
-**Colab Notebook Link:** https://colab.research.google.com/drive/1nj5mUZXJ8MpkcqsdxYaNwKfu0l_nnA__?usp=sharing
+**Colab Notebook Link:** [Click Here](https://colab.research.google.com/drive/1nj5mUZXJ8MpkcqsdxYaNwKfu0l_nnA__?usp=sharing)
 
 ---
 
 ## Q1(a). Deep Learning on MNIST & FashionMNIST
-Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(train-val-test)
+Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split (train-val-test).
 
 ### 1. MNIST Results (Test Classification Accuracy)
 | Batch Size | Optimizer | Learning Rate | ResNet-18 Acc (%) | ResNet-50 Acc (%) |
@@ -33,7 +33,7 @@ Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(trai
 | 32 | Adam | 0.001 | **89.39%** | 87.04% |
 | 32 | Adam | 0.0001 | 89.16% | 85.12% |
 
-### Results Table (Best Test Accuracy)
+### Overall Best Results Table
 | Dataset | Model | Best Optimizer | Best Acc (%) |
 | :--- | :--- | :--- | :--- |
 | **MNIST** | ResNet-18 | SGD | **98.93%** |
@@ -44,7 +44,7 @@ Implemented ResNet-18 and ResNet-50 on both datasets with a 70-10-20 split.(trai
 > **Note:** The **Hyperparameter Tuned Model** is the overall best model. The other results listed above represent the best model found for that specific configuration (Dataset + Architecture) during the standard training and testing phase.
 
 ### Training Graphs
-Below are the training and validation accuracy curves for all models, including the hyperparameter tuned run.
+Below are the training and validation accuracy curves for all models, including the hyperparameter tuned run.  
 ![Training Graphs](all_training_graphs.png)
 
 **Analysis:**
