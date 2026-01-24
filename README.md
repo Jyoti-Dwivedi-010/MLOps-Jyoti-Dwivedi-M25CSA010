@@ -89,7 +89,7 @@ Comparison of training time and performance on FashionMNIST (2 Epochs).
 * **Model Efficiency:** ResNet-32 (designed for CIFAR-style 32x32 images) achieved the highest accuracy (**90.25%**) while having fewer FLOPs than ResNet-50.
 
 ---
-##Files
+## Files
 This repository contains:
 Readme file
 Code file (Assignment1.ipynb)
@@ -98,3 +98,4 @@ Code file (Assignment1.ipynb)
 1 csv file of SVM training
 1 csv file of CPU vs GPU training
 2 graphs based results
+1 report
