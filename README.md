@@ -91,11 +91,11 @@ Comparison of training time and performance on FashionMNIST (2 Epochs).
 ---
 ## Files
 This repository contains:
-Readme file
-Code file (Assignment1.ipynb)
-4 configurations-wise best models and their csv files
-1 best model( hyperparameter tuned model)
-1 csv file of SVM training
-1 csv file of CPU vs GPU training
-2 graphs based results
-1 report
+* Readme file
+* Code file (Assignment1.ipynb)
+* 4 configurations-wise best models and their csv files
+* 1 best model( hyperparameter tuned model)
+* 1 csv file of SVM training
+* 1 csv file of CPU vs GPU training
+* 2 graphs based results
+* 1 report
