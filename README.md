@@ -66,7 +66,7 @@ Comparison of training time and performance on FashionMNIST (2 Epochs).
 ![Speedup Graph](q2_speedup_graph.png)
 
 ### Detailed Metrics
-| Compute | Model | Optimizer | Accuracy | Time (ms) | FLOPs (G) |
+| Compute | Model | Optimizer | Accuracy | Time (ms) | GFLOPs |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **CPU** | ResNet-18 | SGD | 88.20% | 638,715 | 0.035 |
 | **GPU** | ResNet-18 | SGD | 88.84% | 123,926 | 0.035 |
