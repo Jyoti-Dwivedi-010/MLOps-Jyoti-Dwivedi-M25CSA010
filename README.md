@@ -18,4 +18,4 @@ Design and analysis of a custom 3-layer CNN on the CIFAR-10 dataset, focusing on
 
 ## 4. Links
 - **WandB Link:** https://wandb.ai/dwivedijyoti620-prom-iit-rajasthan/cifar10-lab2/runs/6g0tde6x
-- **GitHub Link:** https://github.com/Jyoti-Dwivedi-010/MLOps-Jyoti-Dwivedi-M25CSA010/edit/Jyoti-Dwivedi_M25CSA010_Lab2_worksheet
+- **GitHub Link:** https://github.com/Jyoti-Dwivedi-010/MLOps-Jyoti-Dwivedi-M25CSA010/tree/Jyoti-Dwivedi_M25CSA010_Lab2_worksheet
