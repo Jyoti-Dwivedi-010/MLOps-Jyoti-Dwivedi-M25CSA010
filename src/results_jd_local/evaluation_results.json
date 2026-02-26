@@ -1,7 +1,7 @@
 {
     "eval_loss": 2.088526725769043,
     "accuracy": 0.1025,
-    "f1_weighted": 0.3275562574934288,
+    "f1_weighted": 0.1275562574934288,
     "classification_report": {
         "romance": {
             "precision": 0.5491803278688525,
