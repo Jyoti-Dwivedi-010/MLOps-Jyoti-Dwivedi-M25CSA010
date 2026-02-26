@@ -51,13 +51,13 @@ Note: Sequence length reduced to 128 due to CPU constraints.
 ---
 
 ## Project Structure
-├── data.py
-├── train.py
-├── evaluate.py
-├── requirements.txt
-├── Dockerfile.train
-├── Dockerfile.eval
-└── README.md
+- data.py
+- train.py
+- evaluate.py
+- requirements.txt
+- Dockerfile.train
+- Dockerfile.eval
+- README.md
 
 ---
 
@@ -75,11 +75,11 @@ Note: Sequence length reduced to 128 due to CPU constraints.
 ---
 ### Dependencies
 
-torch==2.1.2
-transformers==4.36.2
-datasets==2.16.1
-scikit-learn==1.3.2
-accelerate==0.25.0
+- torch==2.1.2
+- transformers==4.36.2
+- datasets==2.16.1
+- scikit-learn==1.3.2
+- accelerate==0.25.0
 
 ### Hugging Face Model
 
