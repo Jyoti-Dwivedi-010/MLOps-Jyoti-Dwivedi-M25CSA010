@@ -9,6 +9,7 @@
             "f1-score": 0.4161490683229814,
             "support": 200.0
         },
+        
         "fantasy_paranormal": {
             "precision": 0.08387096774193549,
             "recall": 0.065,
