@@ -65,13 +65,13 @@ Note: Sequence length reduced to 128 due to CPU constraints.
 
 ### Build Training Image
 
-docker build -t assignment3-train -f Dockerfile.train .
-docker run assignment3-train python /src/train.py
+- docker build -t assignment3-train -f Dockerfile.train .
+- docker run assignment3-train python /src/train.py
 
 ### Build Evaluation Image
 
-docker build -t assignment3-eval -f Dockerfile.eval .
-docker run -e HF_TOKEN=**** assignment3-eval python /src/evaluate.py
+- docker build -t assignment3-eval -f Dockerfile.eval .
+- docker run -e HF_TOKEN=**** assignment3-eval python /src/evaluate.py
 ---
 ### Dependencies
 
@@ -83,7 +83,7 @@ accelerate==0.25.0
 
 ### Hugging Face Model
 
-https://huggingface.co/JD16112001/model_assignment3
+- https://huggingface.co/JD16112001/model_assignment3
 ---
 ### Key Takeaways
 
