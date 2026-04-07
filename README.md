@@ -12,29 +12,10 @@ This repository is structured to satisfy Assignment-5 requirements for:
 - scripts: Bash helper scripts to run complete pipelines (Linux).
 - results: CSV/JSON tables and generated plots.
 - weights: trained model checkpoints.
-- reports: final PDF report (naming example: B22CS043_Firstname_Surname_Ass5.pdf).
+- reports: M25CSA010_Jyoti_Dwivedi_Ass5.pdf
 
-## 2) Branch and Submission Checklist
 
-1. Create branch named: Assignment 5
-2. Push:
-   - requirements.txt
-   - all .py files
-   - report PDF
-   - best model weights for Q1
-   - all weights for Q2
-3. Add in README and report:
-   - WandB links
-   - HuggingFace link
-   - train-val tables and graphs for Q1 and Q2
-   - Q2 qualitative original/adversarial image samples
-4. Upload on Classroom:
-   - GitHub branch link
-   - WandB link
-   - HuggingFace link
-   - report PDF only
-
-## 3) Environment Setup
+## 2) Environment Setup
 
 ### GPU Configuration
 
@@ -84,7 +65,7 @@ chmod +x scripts/run_in_docker.sh
    export CUDA_VISIBLE_DEVICES=1
    ```
 
-## 4) Q1 Commands (ViT-S + LoRA)
+## 3) Q1 Commands (ViT-S + LoRA)
 
 **Run all Q1 experiments at once:**
 ```bash
@@ -92,7 +73,7 @@ chmod +x scripts/run_q1_all.sh
 ./scripts/run_q1_all.sh --data_root ./data --use_wandb
 ```
 
-### 4.1 Baseline (without LoRA, classification head fine-tune)
+### 3.1 Baseline (without LoRA, classification head fine-tune)
 
 ```bash
 python -m src.q1_vit_lora.train_baseline \
@@ -107,7 +88,7 @@ Outputs:
 - results/q1/baseline/train_val_table.csv
 - results/q1/baseline/summary.json
 
-### 4.2 LoRA Grid Experiments (rank in {2,4,8}, alpha in {2,4,8}, dropout=0.1)
+### 3.2 LoRA Grid Experiments (rank in {2,4,8}, alpha in {2,4,8}, dropout=0.1)
 
 ```bash
 python -m src.q1_vit_lora.run_grid \
@@ -128,7 +109,7 @@ Outputs per experiment:
 Combined test table:
 - results/q1/lora_grid/q1_test_results_table.csv
 
-### 4.3 Optuna Search (LoRA hyperparameters only)
+### 3.3 Optuna Search (LoRA hyperparameters only)
 
 ```bash
 python -m src.q1_vit_lora.optuna_lora_search \
@@ -141,7 +122,7 @@ python -m src.q1_vit_lora.optuna_lora_search \
 Output:
 - results/q1/optuna/best_lora_optuna.json
 
-### 4.4 Upload Best Q1 Model to HuggingFace
+### 3.4 Upload Best Q1 Model to HuggingFace
 
 ```bash
 python -m src.q1_vit_lora.upload_best_to_hf \
@@ -153,7 +134,7 @@ python -m src.q1_vit_lora.upload_best_to_hf \
     --dropout 0.1
 ```
 
-### 4.5 [Optional] Partial Freeze Experiment
+### 3.5 [Optional] Partial Freeze Experiment
 
 ```bash
 python -m src.q1_vit_lora.train_partial_freeze \
@@ -176,7 +157,7 @@ Output:
 - results/q1/partial_freeze/classwise_test_accuracy_hist.png
 - results/q1/partial_freeze/lora_gradient_updates.png
 
-## 5) Q2 Commands (Adversarial Attacks + Detection)
+## 4) Q2 Commands (Adversarial Attacks + Detection)
 
 **Run all Q2 experiments at once:**
 ```bash
@@ -184,7 +165,7 @@ chmod +x scripts/run_q2_all.sh
 ./scripts/run_q2_all.sh --data_root ./data --use_wandb
 ```
 
-### 5.1 Train clean ResNet18 (target >=72% test accuracy)
+### 4.1 Train clean ResNet18 (target >=72% test accuracy)
 
 ```bash
 python -m src.q2_attacks.train_clean_resnet18 \
@@ -200,7 +181,7 @@ Output:
 - results/q2/clean_resnet18/train_val_table.csv
 - results/q2/clean_resnet18/summary.json
 
-### 5.2 FGSM comparison (Scratch vs ART)
+### 4.2 FGSM comparison (Scratch vs ART)
 
 ```bash
 python -m src.q2_attacks.fgsm_compare \
@@ -217,7 +198,7 @@ Outputs:
 - results/q2/fgsm_compare/summary.json
 - results/q2/fgsm_compare/fgsm_clean_vs_scratch_vs_art.png
 
-### 5.3 Adversarial detector (ResNet34) for PGD and BIM
+### 4.3 Adversarial detector (ResNet34) for PGD and BIM
 
 ```bash
 # PGD detector
@@ -247,7 +228,7 @@ Outputs:
 - results/q2/detectors/bim/train_val_table.csv
 - results/q2/detectors/bim/summary.json
 
-### 5.4 Log 10 sample pairs for FGSM(scratch), FGSM(ART), PGD, BIM on WandB
+### 4.4 Log 10 sample pairs for FGSM(scratch), FGSM(ART), PGD, BIM on WandB
 
 ```bash
 python -m src.q2_attacks.log_all_attack_samples_wandb \
@@ -256,7 +237,7 @@ python -m src.q2_attacks.log_all_attack_samples_wandb \
     --wandb_project assignment5-q2
 ```
 
-## 6) One-Command Pipeline Helpers
+## 5) One-Command Pipeline Helpers
 
 ```bash
 # Make scripts executable
@@ -280,7 +261,7 @@ Note:
 - If you omit --use_wandb, scripts still run and save local results.
 - The Q2 sample logging script is only triggered when --use_wandb is provided.
 
-## 7) GPU Memory Management
+## 6) GPU Memory Management
 
 All scripts automatically clean up GPU memory on exit. For manual cleanup:
 ```bash
@@ -295,7 +276,7 @@ torch.cuda.empty_cache()
 gc.collect()
 ```
 
-## 8) Q1 Results
+## 7) Q1 Results
 
 ### Q1 Test Results Table
 
@@ -373,12 +354,9 @@ Configuration: Keep last 2 transformer blocks trainable (no LoRA), apply LoRA to
 - `results/q2/detectors/bim/train_val_table.csv` - BIM detector training
 - Attack samples logged to WandB (10 samples each for FGSM, PGD, BIM)
 
-## 9) WandB and HuggingFace Links
+## 8) WandB and HuggingFace Links
 
 - **WandB Q1**: https://wandb.ai/m25csa010-iit-jodhpur/assignment5-q1
 - **WandB Q2**: https://wandb.ai/m25csa010-iit-jodhpur/assignment5-q2
 - **HuggingFace Q1 best model**: https://huggingface.co/JD16112001/vit-lora-cifar100-best
 
-## 10) GitHub Page Update
-
-Add this assignment repository/branch and final report links to your GitHub profile page or assignment index.
