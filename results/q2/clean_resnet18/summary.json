@@ -1,0 +1,6 @@
+{
+  "best_validation_accuracy": 0.8375999998092651,
+  "test_accuracy_clean": 0.8326,
+  "test_loss_clean": 0.5122270404338837,
+  "best_weights": "weights/q2/resnet18_clean_best.pt"
+}

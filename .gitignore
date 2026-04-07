@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.tmp
+.env
+.venv/
+venv/
+wandb/
+outputs/
+art_data/
+results/*.tmp
+*.log
+.DS_Store
+
+# Data folder (too large)
+data/
+*.tar.gz
+
+# Temporary export folders
+tmp_*/
+
+# Original weights folder (too large - use weights_submit instead)
+weights/
+
+# Keep weights_submit/ which has only required weights
+!weights_submit/

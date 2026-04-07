@@ -1,0 +1,4 @@
+setting,epsilon,accuracy
+clean,0.0,0.8326
+fgsm_scratch,0.03,0.0959
+fgsm_art,0.03,0.1906

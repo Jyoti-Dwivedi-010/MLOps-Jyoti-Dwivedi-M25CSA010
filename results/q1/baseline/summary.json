@@ -1,0 +1,6 @@
+{
+  "trainable_parameters": 38500,
+  "total_parameters": 21704164,
+  "best_validation_accuracy": 0.8116,
+  "best_weights": "results/q1/baseline/best_baseline_head_only.pt"
+}

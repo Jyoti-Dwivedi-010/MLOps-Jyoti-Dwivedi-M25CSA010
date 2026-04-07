@@ -1,0 +1,17 @@
+{
+  "data_root": "./data",
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "num_workers": 2,
+  "seed": 42,
+  "rank": 4,
+  "alpha": 2,
+  "dropout": 0.1,
+  "output_dir": "results/q1/lora_grid/r4_a2_d0.1",
+  "save_weights_dir": "weights/q1/grid",
+  "use_wandb": true,
+  "wandb_project": "assignment5-q1",
+  "use_amp": true
+}

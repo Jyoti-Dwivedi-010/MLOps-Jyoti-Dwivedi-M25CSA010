@@ -1,0 +1,10 @@
+lora_layers,rank,alpha,dropout,overall_test_accuracy,trainable_parameters,best_weights
+with,2,2,0.1,0.88969999551773,113864,weights/q1/grid/best_lora_r2_a2_d0.1.pt
+with,2,4,0.1,0.891999959945678,113864,weights/q1/grid/best_lora_r2_a4_d0.1.pt
+with,2,8,0.1,0.8926999568939201,113864,weights/q1/grid/best_lora_r2_a8_d0.1.pt
+with,4,2,0.1,0.889899969100952,150728,weights/q1/grid/best_lora_r4_a2_d0.1.pt
+with,4,4,0.1,0.8905999660491941,150728,weights/q1/grid/best_lora_r4_a4_d0.1.pt
+with,4,8,0.1,0.8925999999046321,150728,weights/q1/grid/best_lora_r4_a8_d0.1.pt
+with,8,2,0.1,0.8910999894142151,224456,weights/q1/grid/best_lora_r8_a2_d0.1.pt
+with,8,4,0.1,0.8926999568939201,224456,weights/q1/grid/best_lora_r8_a4_d0.1.pt
+with,8,8,0.1,0.8932999968528741,224456,weights/q1/grid/best_lora_r8_a8_d0.1.pt

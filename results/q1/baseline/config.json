@@ -1,0 +1,13 @@
+{
+  "data_root": "./data",
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "num_workers": 2,
+  "seed": 42,
+  "output_dir": "results/q1/baseline",
+  "use_wandb": true,
+  "wandb_project": "assignment5-q1",
+  "use_amp": true
+}

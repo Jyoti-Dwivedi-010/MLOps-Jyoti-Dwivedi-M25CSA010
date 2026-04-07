@@ -1,0 +1,8 @@
+{
+  "clean_accuracy": 0.8326,
+  "fgsm_scratch_accuracy": 0.0959,
+  "fgsm_art_accuracy": 0.1906,
+  "performance_drop_scratch": 0.7367,
+  "performance_drop_art": 0.642,
+  "epsilon": 0.03
+}

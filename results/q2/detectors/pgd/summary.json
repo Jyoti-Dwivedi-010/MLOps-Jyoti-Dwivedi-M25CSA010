@@ -1,0 +1,9 @@
+{
+  "attack": "pgd",
+  "eps": 0.03,
+  "best_validation_accuracy": 0.7896,
+  "test_detection_accuracy": 0.78705,
+  "test_detection_loss": 0.443595925283432,
+  "best_weights": "weights/q2/detectors/resnet34_detector_pgd.pt",
+  "target_requirement_met": true
+}

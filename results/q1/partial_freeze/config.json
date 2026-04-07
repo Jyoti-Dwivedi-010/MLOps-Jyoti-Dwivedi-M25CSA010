@@ -1,0 +1,18 @@
+{
+  "data_root": "./data",
+  "epochs": 10,
+  "batch_size": 128,
+  "lr": 0.0004799830932486029,
+  "weight_decay": 0.0001,
+  "num_workers": 2,
+  "seed": 42,
+  "rank": 4,
+  "alpha": 4,
+  "dropout": 0.1,
+  "trainable_blocks": 2,
+  "output_dir": "results/q1/partial_freeze",
+  "save_weights_dir": "weights/q1/partial_freeze",
+  "use_wandb": true,
+  "wandb_project": "assignment5-q1",
+  "use_amp": true
+}

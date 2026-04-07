@@ -1,0 +1,9 @@
+{
+  "attack": "bim",
+  "eps": 0.03,
+  "best_validation_accuracy": 0.9165,
+  "test_detection_accuracy": 0.9148,
+  "test_detection_loss": 0.2127617935180664,
+  "best_weights": "weights/q2/detectors/resnet34_detector_bim.pt",
+  "target_requirement_met": true
+}
