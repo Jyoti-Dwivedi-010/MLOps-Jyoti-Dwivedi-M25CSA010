@@ -1,1 +1,1 @@
-# MLOps-Jyoti-Dwivedi-M25CSA010
+## Question2: mIOU: 0.5 and mDICE: 0.51
